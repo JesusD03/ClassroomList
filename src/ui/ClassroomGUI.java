@@ -146,7 +146,7 @@ public class ClassroomGUI {
     }
 
     @FXML
-    void logIn(ActionEvent event) throws IOException {
+    public void logIn(ActionEvent event) throws IOException {
     	
     	if(logInName.getText().equals("") && LogInPass.getText().equals("")) {
     		notifications("Por favor llene todos los campos");
@@ -180,7 +180,7 @@ public class ClassroomGUI {
     
 
     @FXML
-    void singUp(ActionEvent event) throws IOException {
+    public void singUp(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("register.fxml"));
     	fxmlLoader.setController(this);
     	Parent window2 = fxmlLoader.load();
@@ -191,7 +191,7 @@ public class ClassroomGUI {
     }
     
     @FXML
-    void logOut(ActionEvent event) throws IOException {
+    public void logOut(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
     	fxmlLoader.setController(this);
     	Parent window3 = fxmlLoader.load();

@@ -33,10 +33,6 @@ public class Classroom {
 		return account;
 	}
 
-	public boolean remove(int index) {
-		return true;
-	}
-
 	public List<UserAccount> getUsers() {
 		return users;
 	}
