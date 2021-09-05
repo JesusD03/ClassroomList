@@ -9,16 +9,28 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="215.0" layoutY="309.0" mnemonicParsing="false" onAction="#singUp" text="Sign Up" />
-      <Button layoutX="343.0" layoutY="309.0" mnemonicParsing="false" onAction="#logIn" text="Log In" />
-      <Label layoutX="226.0" layoutY="49.0" prefHeight="44.0" prefWidth="149.0" text="Sign in to Class">
+      <Button layoutX="162.0" layoutY="309.0" mnemonicParsing="false" onAction="#singUp" prefHeight="32.0" prefWidth="91.0" text="Sign Up">
          <font>
-            <Font size="22.0" />
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button layoutX="330.0" layoutY="309.0" mnemonicParsing="false" onAction="#logIn" prefHeight="32.0" prefWidth="91.0" text="Log In">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Label layoutX="206.0" layoutY="46.0" prefHeight="44.0" prefWidth="188.0" text="Sign in to Class">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="227.0" layoutY="149.0" text="Usernamer" />
-      <Label layoutX="227.0" layoutY="231.0" text="Password" />
-      <TextField fx:id="logInName" layoutX="295.0" layoutY="145.0" />
-      <PasswordField fx:id="LogInPass" layoutX="295.0" layoutY="227.0" />
+      <Label layoutX="121.0" layoutY="129.0" prefHeight="32.0" prefWidth="123.0" text="Username:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="121.0" layoutY="211.0" prefHeight="32.0" prefWidth="123.0" text="Password:">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font></Label>
+      <TextField fx:id="logInName" layoutX="273.0" layoutY="129.0" prefHeight="32.0" prefWidth="230.0" />
+      <PasswordField fx:id="LogInPass" layoutX="273.0" layoutY="211.0" prefHeight="32.0" prefWidth="230.0" />
    </children>
 </Pane>

@@ -25,7 +25,7 @@ public class Classroom {
 		int account = -1;
 		boolean find = false;
 		for(int i=0; i<users.size() && !find; i++ ) {
-			if(users.get(i).getUsername().equals(name) && users.get(i).getUsername().equals(password)) {
+			if(users.get(i).getUsername().equals(name) && users.get(i).getPassword().equals(password)) {
 				account = i;
 				find = true;
 			}
